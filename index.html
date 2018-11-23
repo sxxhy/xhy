@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
     <title>小米商城</title>
 </head>
 <body>
-    <!--头部start--->
+    <!--头部start-->
     <div id="header">
-        <div class="header-box content">
+        <div class="header-box content clearfix">
             <div class="header-left">
                 <ul class="nav-left">
                     <li>
@@ -58,20 +58,22 @@
             <div class="header-right">
                 <ul class="nav-right">
                     <li>
-                        <a href="#">注册</a>
+                        <a href="register.html">注册</a>
                         <span>丨</span>
                     </li>
                     <li>
-                        <a href="#">登录</a>
+                        <a href="login.html">登录</a>
                         <span>丨</span>
                     </li>
                     <li>
                         <a href="#">消息通知</a>
                     </li>
                     <li>
-                        <a href="#" class="cart">购物车(0)</a>
-                        <div class="cart-info">
-                            <span>购物车中还没有商品，赶紧选购吧！</span>
+                        <div class="cart-content">
+                            <a href="#" class="cart">购物车(0)</a>
+                            <div class="cart-info">
+                                <span>购物车中还没有商品，赶紧选购吧！</span>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -80,33 +82,68 @@
     </div>
     <!--头部结束end-->
     <!--导航栏start-->
-    <div id="nav" class="content">
+    <div class="site-header">
+        <div id="nav" class="content">
         <a href="#" class="logo">
             <img src="images/mi-logo.png" alt="logo" title="小米官网">
         </a>
         <ul class="nav-list">
-            <li><a href="#"><span>小米手机</span></a></li>
-            <li><a href="#"><span>红米</span></a></li>
-            <li><a href="#"><span>电视</span></a></li>
-            <li><a href="#"><span>笔记本</span></a></li>
-            <li><a href="#"><span>空调</span></a></li>
-            <li><a href="#"><span>新品</span></a></li>
-            <li><a href="#"><span>路由器</span></a></li>
-            <li><a href="#"><span>智能硬件</span></a></li>
-            <li><a href="#"><span>服务</span></a></li>
-            <li><a href="#"><span>社区</span></a></li>
+            <li>
+                <a href="#"><span>小米手机</span></a>
+            </li>
+            <li>
+                <a href="#"><span>红米</span></a>
+            </li>
+            <li>
+                <a href="#"><span>电视</span></a>
+            </li>
+            <li>
+                <a href="#"><span>笔记本</span></a>
+            </li>
+            <li>
+                <a href="#"><span>空调</span></a>
+            </li>
+            <li>
+                <a href="#"><span>新品</span></a>
+            </li>
+            <li>
+                <a href="#"><span>路由器</span></a>
+            </li>
+            <li>
+                <a href="#"><span>智能硬件</span></a>
+            </li>
+            <li>
+                <a href="#"><span>服务</span></a>
+            </li>
+            <li>
+                <a href="#"><span>社区</span></a>
+            </li>
         </ul>
         <form action="" class="fr">
             <input type="text" class="search fl">
             <input type="submit" class="sub fl" value="">
         </form>
+        </div>
     </div>
     <!--导航栏end-->
     <!--菜单栏start-->
     <div id="menu" class="content">
         <a href="#" class="big-img">
-            <img src="images/xmad_15402604380082_PpGvu.jpg" alt="">
+            <img src="images/xmad_15402604380082_PpGvu.jpg" alt="" class="show">
+            <img src="images/xmad_15401721446736_EzUqm.jpg" alt="">
+            <img src="images/xmad_15259408612582_TGdhA.jpg" alt="">
+            <img src="images/xmad_15402096756334_SmgWz.jpg" alt="">
+            <img src="images/xmad_15402577411117_cPwiY.jpg" alt="">
         </a>
+        <div class="list-a">
+            <a class="btn active" href="javascript:;"></a>
+            <a class="btn" href="javascript:;"></a>
+            <a class="btn" href="javascript:;"></a>
+            <a class="btn" href="javascript:;"></a>
+            <a class="btn" href="javascript:;"></a>
+        </div>
+        <button class="btn-l"></button>
+        <button class="btn-r"></button>
         <ul class="menu-list">
             <li class="list-child">
                 <a href="#">手机 电话卡<i></i></a>
@@ -1077,24 +1114,15 @@
                 </div>
             </li>
         </ul>
-        <div class="list-a">
-            <a href="javascript:;"></a>
-            <a href="javascript:;"></a>
-            <a href="javascript:;"></a>
-            <a href="javascript:;"></a>
-            <a href="javascript:;"></a>
-        </div>
-        <button class="btn-l"></button>
-        <button class="btn-r"></button>
     </div>
     <div id="image-show" class="content">
         <div class="list-icon-content fl mr">
             <a href="#"><i></i><span>选购手机</span></a>
-            <a href="#"><i></i><span>企业团购</span></a>
-            <a href="#"><i></i><span>F码通道</span></a>
-            <a href="#"><i></i><span>米粉卡</span></a>
-            <a href="#"><i></i><span>以旧换新</span></a>
-            <a href="#"><i></i><span>话费充值</span></a>    
+            <a href="#" class="after-line under"><i></i><span>企业团购</span></a>
+            <a href="#" class="after-line under"><i></i><span>F码通道</span></a>
+            <a href="#" class="after-line before-line"><i></i><span>米粉卡</span></a>
+            <a href="#" class="after-line before-line super"><i></i><span>以旧换新</span></a>
+            <a href="#" class="after-line before-line super"><i></i><span>话费充值</span></a>    
         </div>
         <div class="fl mr">
             <a href=""><img src="images/xmad_15381015124677_QcEGp.jpg" alt=""></a>
@@ -1124,7 +1152,7 @@
         </div>
         <div class="flashover-list">
             <ul>
-                <li>
+                <li class="first-product">
                     <a href="#">
                         <p class="kill-info">9.9元秒杀</p>
                         <img src="images/T1o7bgB5Kv1RXrhCrK.jpg" alt="">
@@ -1273,12 +1301,12 @@
     </div>
     <!--小米闪购end-->
     <!--手机列表start-->
-    <div class="img-info content">
+    <div class="content img-info">
         <a href="#">
             <img src="images/xmad_15408661432025_tiVWv.jpg" alt="">
         </a>
     </div>
-    <div class="phone-list content clearfix">
+    <div class="phone-list content clearfix" id="phone-info">
         <div class="clearfix">
             <h2 class="floor fl">手机</h2>
             <div class="fr phone-more">
@@ -1286,11 +1314,11 @@
             </div>
         </div>
         <div class="left-img fl">
-            <a href="#">
+            <a href="#" id="left-phone-img">
                 <img src="images/xmad_15407792204208_jtrJc.jpg" alt="">
             </a>
         </div>
-        <div class="fl">
+        <div class="fl product-list">
             <ul>
                 <li>
                     <a href="#">
@@ -1367,7 +1395,7 @@
                         </p>
                     </a>
                 </li>
-                <li>
+                <li id="last-aList">
                     <a href="">
                         <p  class="undetermined"></p>
                         <img src="images/pms_1525853341.8312102!220x220.jpg" alt="">
@@ -1380,24 +1408,476 @@
         </div>
     </div>
     <!--手机列表end-->
+    <!--家电列表start-->
     <div class="img-info content">
         <a href="#">
-            <img src="images/xmad_15408661432025_tiVWv.jpg" alt="">
+            <img src="images/xmad_15409837644072_fKVUE.jpg" alt="">
         </a>
     </div>
-    <div class="phone-list content clearfix">
+    <div class="phone-list content clearfix house-app">
         <div class="clearfix">
-            <h2 class="floor fl">手机</h2>
-            <div class="fr phone-more">
-                <a href="#">查看全部 <i></i></a>
+            <h2 class="floor fl">家电</h2>
+            <div class="fr more-list">
+                <ul>
+                    <li>
+                        <a href="#1" class="active">热门</a>
+                    </li>
+                    <li>
+                        <a href="#2">电视影音</a>
+                    </li>
+                    <li>
+                        <a href="#3">电脑</a>
+                    </li>
+                    <li>
+                        <a href="#4">家居</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="left-img fl">
-            <a href="#">
-                <img src="images/xmad_15407792204208_jtrJc.jpg" alt="">
+            <a href="" class="left-img-top">
+                <img src="images/xmad_15232433421155_vCzhJ.jpg" alt="">
+            </a> 
+            <a href="" class="left-img-bottom">
+                <img src="images/xmad_15123939053142_dFlAw.jpg" alt="">
             </a>
         </div>
-        <div class="fl">
+        <div class="fl product-list other" data-list="#1">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="new-product">新品</p>
+                        <img src="images/pms_1524883847.49276938!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4A 43英寸青春版</p>
+                        <p class="commodity-introduce">全高清屏 / 人工智能语音</p>
+                        <p  class="flashover-price">
+                            <span>1399元</span>
+                            <s>1699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="new-product">新品</p>
+                        <img src="images/pms_1522318330.86967810!220x220.jpg" alt="">
+                        <p  class="commodity-title">小米电视4C 50英寸</p>
+                        <p class="commodity-introduce">4K HDR / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1799元</span>
+                            <s>2199元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">减150元</p>
+                        <img src="images/xmad_15350951136177_QUuVm.png" alt="">
+                        <p  class="commodity-title">笔记本 i5 4G MX110</p>
+                        <p class="commodity-introduce">极速处理器</p>
+                        <p class="flashover-price">
+                            <span>1649元</span>
+                            <s>1799元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">减400元</p>
+                        <img src="images/pms_1524636075.71677607!220x220.jpg" alt="">
+                        <p  class="commodity-title">小米MIX 2S 8GB+256GB</p>
+                        <p class="commodity-introduce">晓龙845 年度旗舰处理器</p>
+                        <p class="flashover-price">
+                            <span>3599元</span>
+                            <s>3999元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">享8折</p>
+                        <img src="images/xmad_14972549116226_tZpod.png" alt="">
+                        <p  class="commodity-title">小米6X 4GB+32GB</p>
+                        <p class="commodity-introduce">全索尼相机，晓龙660 AIE处理器</p>
+                        <p class="flashover-price">
+                            <span>1199元</span>
+                            <s>1499元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="undetermined"></p>
+                        <img src="images/xmad_15281923207128_rOfDp.png" alt="">
+                        <p  class="commodity-title">小米Max 2 4GB+64GB</p>
+                        <p class="commodity-introduce">6.44''大屏，5300mAh 充电宝级的大...</p>
+                        <p class="flashover-price"><span>1699元</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">享6折</p>
+                        <img src="images/pms_1504498936.11861982!220x220.jpg" alt="">
+                        <p  class="commodity-title">小米MIX 2 全陶瓷尊享版</p>
+                        <p class="commodity-introduce">全面屏2.0，Unibody 全陶</p>
+                        <p class="flashover-price">
+                            <span>2699元</span>
+                            <s>4699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <div class="small-box">
+                        <a href="#">小米盒子3s</a>
+                        <p>299元</p>
+                        <img src="images/pms_1479190789.95594557!220x220.jpg" alt="">
+                    </div>
+                    <div class="small-box">
+                        <a href="#">浏览更多</a>
+                        <a href="#">电视影音</a>
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fr product-list" data-list="#2">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="new-product">新品</p>
+                        <img src="images/pms_1524883847.49276938!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4A 43英寸青春版</p>
+                        <p class="commodity-introduce">全高清屏 / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1399元</span>
+                            <s>1699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1522318330.86967810!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4C 50英寸</p>
+                        <p class="commodity-introduce">4K HDR / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1799元</span>
+                            <s>2199元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">减150元</p>
+                        <img src="images/xmad_15350951136177_QUuVm.png" alt="">
+                        <p class="commodity-title">笔记本 i5 4G MX110</p>
+                        <p class="commodity-introduce">极速处理器</p>
+                        <p class="flashover-price">
+                            <span>1649元</span>
+                            <s>1799元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">减400元</p>
+                        <img src="images/pms_1524636075.71677607!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2S 8GB+256GB</p>
+                        <p class="commodity-introduce">晓龙845 年度旗舰处理器</p>
+                        <p class="flashover-price">
+                            <span>3599元</span>
+                            <s>3999元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">享8折</p>
+                        <img src="images/xmad_14972549116226_tZpod.png" alt="">
+                        <p class="commodity-title">小米6X 4GB+32GB</p>
+                        <p class="commodity-introduce">全索尼相机，晓龙660 AIE处理器</p>
+                        <p class="flashover-price">
+                            <span>1199元</span>
+                            <s>1499元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="undetermined"></p>
+                        <img src="images/xmad_15281923207128_rOfDp.png" alt="">
+                        <p class="commodity-title">小米Max 2 4GB+64GB</p>
+                        <p class="commodity-introduce">6.44''大屏，5300mAh 充电宝级的大...</p>
+                        <p class="flashover-price"><span>1699元</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">享6折</p>
+                        <img src="images/pms_1504498936.11861982!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2 全陶瓷尊享版</p>
+                        <p class="commodity-introduce">全面屏2.0，Unibody 全陶</p>
+                        <p class="flashover-price">
+                            <span>2699元</span>
+                            <s>4699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <div class="small-box">
+                        <a href="#">小米盒子3s</a>
+                        <p>299元</p>
+                        <img src="images/pms_1479190789.95594557!220x220.jpg" alt="">
+                    </div>
+                    <div class="small-box">
+                        <a href="#">浏览更多</a>
+                        <a href="#">电视影音</a>
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fr product-list" data-list="#3">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="new-product">新品</p>
+                        <img src="images/pms_1524883847.49276938!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4A 43英寸青春版</p>
+                        <p class="commodity-introduce">全高清屏 / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1399元</span>
+                            <s>1699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1522318330.86967810!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4C 50英寸</p>
+                        <p class="commodity-introduce">4K HDR / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1799元</span>
+                            <s>2199元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_15350951136177_QUuVm.png" alt="">
+                        <p class="commodity-title">笔记本 i5 4G MX110</p>
+                        <p class="commodity-introduce">极速处理器</p>
+                        <p class="flashover-price">
+                            <span>1649元</span>
+                            <s>1799元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1524636075.71677607!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2S 8GB+256GB</p>
+                        <p class="commodity-introduce">晓龙845 年度旗舰处理器</p>
+                        <p class="flashover-price">
+                            <span>3599元</span>
+                            <s>3999元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_14972549116226_tZpod.png" alt="">
+                        <p class="commodity-title">小米6X 4GB+32GB</p>
+                        <p class="commodity-introduce">全索尼相机，晓龙660 AIE处理器</p>
+                        <p class="flashover-price">
+                            <span>1199元</span>
+                            <s>1499元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_15281923207128_rOfDp.png" alt="">
+                        <p class="commodity-title">小米Max 2 4GB+64GB</p>
+                        <p class="commodity-introduce">6.44''大屏，5300mAh 充电宝级的大...</p>
+                        <p class="flashover-price"><span>1699元</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">享6折</p>
+                        <img src="images/pms_1504498936.11861982!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2 全陶瓷尊享版</p>
+                        <p class="commodity-introduce">全面屏2.0，Unibody 全陶</p>
+                        <p class="flashover-price">
+                            <span>2699元</span>
+                            <s>4699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <div class="small-box">
+                        <a href="#">小米盒子3s</a>
+                        <p>299元</p>
+                        <img src="images/pms_1479190789.95594557!220x220.jpg" alt="">
+                    </div>
+                    <div class="small-box">
+                        <a href="#">浏览更多</a>
+                        <a href="#">电视影音</a>
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fr product-list" data-list="#4">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p></p>
+                        <img src="images/pms_1524883847.49276938!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4A 43英寸青春版</p>
+                        <p class="commodity-introduce">全高清屏 / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1399元</span>
+                            <s>1699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1522318330.86967810!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4C 50英寸</p>
+                        <p class="commodity-introduce">4K HDR / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1799元</span>
+                            <s>2199元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="new-product">新品</p>
+                        <img src="images/xmad_15350951136177_QUuVm.png" alt="">
+                        <p class="commodity-title">笔记本 i5 4G MX110</p>
+                        <p class="commodity-introduce">极速处理器</p>
+                        <p class="flashover-price">
+                            <span>1649元</span>
+                            <s>1799元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">减400元</p>
+                        <img src="images/pms_1524636075.71677607!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2S 8GB+256GB</p>
+                        <p class="commodity-introduce">晓龙845 年度旗舰处理器</p>
+                        <p class="flashover-price">
+                            <span>3599元</span>
+                            <s>3999元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">享8折</p>
+                        <img src="images/xmad_14972549116226_tZpod.png" alt="">
+                        <p class="commodity-title">小米6X 4GB+32GB</p>
+                        <p class="commodity-introduce">全索尼相机，晓龙660 AIE处理器</p>
+                        <p class="flashover-price">
+                            <span>1199元</span>
+                            <s>1499元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="undetermined"></p>
+                        <img src="images/xmad_15281923207128_rOfDp.png" alt="">
+                        <p class="commodity-title">小米Max 2 4GB+64GB</p>
+                        <p class="commodity-introduce">6.44''大屏，5300mAh 充电宝级的大...</p>
+                        <p class="flashover-price"><span>1699元</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1504498936.11861982!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2 全陶瓷尊享版</p>
+                        <p class="commodity-introduce">全面屏2.0，Unibody 全陶</p>
+                        <p class="flashover-price">
+                            <span>2699元</span>
+                            <s>4699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <div class="small-box">
+                        <a href="#">小米盒子3s</a>
+                        <p>299元</p>
+                        <img src="images/pms_1479190789.95594557!220x220.jpg" alt="">
+                    </div>
+                    <div class="small-box">
+                        <a href="#">浏览更多</a>
+                        <a href="#">电视影音</a>
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--家电列表end-->
+    <!--智能商品列表start-->
+    <div class="img-info content">
+        <a href="#">
+            <img src="images/xmad_15204795762271_ZwaxE.jpg" alt="">
+        </a>
+    </div>
+    <div class="phone-list content clearfix intelligence">
+        <div class="clearfix">
+            <h2 class="floor fl">智能</h2>
+            <div class="fr more-list">
+                <ul>
+                    <li>
+                        <a href="#5" class="active">热门</a>
+                    </li>
+                    <li>
+                        <a href="#6">出行</a>
+                    </li>
+                    <li>
+                        <a href="#7">健康</a>
+                    </li>
+                    <li>
+                        <a href="#8">酷玩</a>
+                    </li>
+                    <li>
+                        <a href="#9">路由器</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="left-img fl">
+            <a href="" class="left-img-top">
+                <img src="images/xmad_15266395374048_JnZQo.jpg" alt="">
+            </a> 
+            <a href="" class="left-img-bottom">
+                <img src="images/xmad_14950995035103_fhWtH.jpg" alt="">
+            </a>
+        </div>
+        <div class="fl product-list other" data-list="#5">
             <ul>
                 <li>
                     <a href="#">
@@ -1475,60 +1955,53 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <p  class="undetermined"></p>
-                        <img src="images/pms_1525853341.8312102!220x220.jpg" alt="">
-                        <p  class="commodity-title">红米S2 3GB+32GB</p>
-                        <p class="commodity-introduce">前置1600万超大像素智能美拍</p>
-                        <p class="flashover-price"><span>999元</span></p>
-                    </a>
+                    <div class="small-box">
+                        <a href="#">小米盒子3s</a>
+                        <p>299元</p>
+                        <img src="images/pms_1479190789.95594557!220x220.jpg" alt="">
+                    </div>
+                    <div class="small-box">
+                        <a href="#">浏览更多</a>
+                        <a href="#">电视影音</a>
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="img-info content">
-        <a href="#">
-            <img src="images/xmad_15408661432025_tiVWv.jpg" alt="">
-        </a>
-    </div>
-    <div class="phone-list content clearfix">
-        <div class="clearfix">
-            <h2 class="floor fl">手机</h2>
-            <div class="fr phone-more">
-                <a href="#">查看全部 <i></i></a>
-            </div>
-        </div>
-        <div class="left-img fl">
-            <a href="#">
-                <img src="images/xmad_15407792204208_jtrJc.jpg" alt="">
-            </a>
-        </div>
-        <div class="fl">
+        <div class="fr product-list" data-list="#6">
             <ul>
                 <li>
                     <a href="#">
-                        <p class="new-product">新品</p>
-                        <img src="images/pms_1537323963.1278763!220x220.jpg" alt="">
-                        <p class="commodity-title">小米8 青春版 4GB+64GB</p>
-                        <p class="commodity-introduce">潮流镜面渐变色，2400万自拍旗舰</p>
-                        <p  class="flashover-price"><span>1399元</span></p>
+                        <p class="kill-info">减300</p>
+                        <img src="images/pms_1524883847.49276938!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4A 43英寸青春版</p>
+                        <p class="commodity-introduce">全高清屏 / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1399元</span>
+                            <s>1699元</s>
+                        </p>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <p class="new-product">新品</p>
-                        <img src="images/pms_1537356460.6227958!220x220.png" alt="">
-                        <p  class="commodity-title">小米8 屏幕指纹版 8GB+128GB</p>
-                        <p class="commodity-introduce">全球首款压感屏幕指纹，双屏GPS...</p>
-                        <p class="flashover-price"><span>3599元</span></p>
+                        <img src="images/pms_1522318330.86967810!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4C 50英寸</p>
+                        <p class="commodity-introduce">4K HDR / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1799元</span>
+                            <s>2199元</s>
+                        </p>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <p class="kill-info">减150元</p>
-                        <img src="images/pms_1527684990.93616987!220x220.jpg" alt="">
-                        <p  class="commodity-title">小米8 SE 4GB+64GB</p>
-                        <p class="commodity-introduce">AI 超感光双摄，三星AMOLED屏幕</p>
+                        <img src="images/xmad_15350951136177_QUuVm.png" alt="">
+                        <p class="commodity-title">笔记本 i5 4G MX110</p>
+                        <p class="commodity-introduce">极速处理器</p>
                         <p class="flashover-price">
                             <span>1649元</span>
                             <s>1799元</s>
@@ -1538,8 +2011,8 @@
                 <li>
                     <a href="">
                         <p class="kill-info">减400元</p>
-                        <img src="images/pms_1522034061.12391230!220x220.jpg" alt="">
-                        <p  class="commodity-title">小米MIX 2S 8GB+256GB</p>
+                        <img src="images/pms_1524636075.71677607!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2S 8GB+256GB</p>
                         <p class="commodity-introduce">晓龙845 年度旗舰处理器</p>
                         <p class="flashover-price">
                             <span>3599元</span>
@@ -1550,8 +2023,8 @@
                 <li>
                     <a href="">
                         <p class="kill-info">享8折</p>
-                        <img src="images/pms_1527144859.25489991!220x220.jpg" alt="">
-                        <p  class="commodity-title">小米6X 4GB+32GB</p>
+                        <img src="images/xmad_14972549116226_tZpod.png" alt="">
+                        <p class="commodity-title">小米6X 4GB+32GB</p>
                         <p class="commodity-introduce">全索尼相机，晓龙660 AIE处理器</p>
                         <p class="flashover-price">
                             <span>1199元</span>
@@ -1562,8 +2035,8 @@
                 <li>
                     <a href="">
                         <p class="undetermined"></p>
-                        <img src="images/pms_1495692033.10494295!220x220.jpg" alt="">
-                        <p  class="commodity-title">小米Max 2 4GB+64GB</p>
+                        <img src="images/xmad_15281923207128_rOfDp.png" alt="">
+                        <p class="commodity-title">小米Max 2 4GB+64GB</p>
                         <p class="commodity-introduce">6.44''大屏，5300mAh 充电宝级的大...</p>
                         <p class="flashover-price"><span>1699元</span></p>
                     </a>
@@ -1571,8 +2044,8 @@
                 <li>
                     <a href="">
                         <p class="kill-info">享6折</p>
-                        <img src="images/pms_1509723483.31416776!220x220.jpg" alt="">
-                        <p  class="commodity-title">小米MIX 2 全陶瓷尊享版</p>
+                        <img src="images/pms_1504498936.11861982!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2 全陶瓷尊享版</p>
                         <p class="commodity-introduce">全面屏2.0，Unibody 全陶</p>
                         <p class="flashover-price">
                             <span>2699元</span>
@@ -1581,26 +2054,362 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <p  class="undetermined"></p>
-                        <img src="images/pms_1525853341.8312102!220x220.jpg" alt="">
-                        <p  class="commodity-title">红米S2 3GB+32GB</p>
-                        <p class="commodity-introduce">前置1600万超大像素智能美拍</p>
-                        <p class="flashover-price"><span>999元</span></p>
+                    <div class="small-box">
+                        <a href="#">小米盒子3s</a>
+                        <p>299元</p>
+                        <img src="images/pms_1479190789.95594557!220x220.jpg" alt="">
+                    </div>
+                    <div class="small-box">
+                        <a href="#">浏览更多</a>
+                        <a href="#">电视影音</a>
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fr product-list" data-list="#7">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p></p>
+                        <img src="images/pms_1524883847.49276938!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4A 43英寸青春版</p>
+                        <p class="commodity-introduce">全高清屏 / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1399元</span>
+                            <s>1699元</s>
+                        </p>
                     </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="new-product">新品</p>
+                        <img src="images/pms_1522318330.86967810!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4C 50英寸</p>
+                        <p class="commodity-introduce">4K HDR / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1799元</span>
+                            <s>2199元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_15350951136177_QUuVm.png" alt="">
+                        <p class="commodity-title">笔记本 i5 4G MX110</p>
+                        <p class="commodity-introduce">极速处理器</p>
+                        <p class="flashover-price">
+                            <span>1649元</span>
+                            <s>1799元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="new-product">新品</p>
+                        <img src="images/pms_1524636075.71677607!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2S 8GB+256GB</p>
+                        <p class="commodity-introduce">晓龙845 年度旗舰处理器</p>
+                        <p class="flashover-price">
+                            <span>3599元</span>
+                            <s>3999元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">享8折</p>
+                        <img src="images/xmad_14972549116226_tZpod.png" alt="">
+                        <p class="commodity-title">小米6X 4GB+32GB</p>
+                        <p class="commodity-introduce">全索尼相机，晓龙660 AIE处理器</p>
+                        <p class="flashover-price">
+                            <span>1199元</span>
+                            <s>1499元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_15281923207128_rOfDp.png" alt="">
+                        <p class="commodity-title">小米Max 2 4GB+64GB</p>
+                        <p class="commodity-introduce">6.44''大屏，5300mAh 充电宝级的大...</p>
+                        <p class="flashover-price"><span>1699元</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1504498936.11861982!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2 全陶瓷尊享版</p>
+                        <p class="commodity-introduce">全面屏2.0，Unibody 全陶</p>
+                        <p class="flashover-price">
+                            <span>2699元</span>
+                            <s>4699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <div class="small-box">
+                        <a href="#">小米盒子3s</a>
+                        <p>299元</p>
+                        <img src="images/pms_1479190789.95594557!220x220.jpg" alt="">
+                    </div>
+                    <div class="small-box">
+                        <a href="#">浏览更多</a>
+                        <a href="#">电视影音</a>
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fr product-list" data-list="#8">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="new-product">新品</p>
+                        <img src="images/pms_1524883847.49276938!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4A 43英寸青春版</p>
+                        <p class="commodity-introduce">全高清屏 / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1399元</span>
+                            <s>1699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1522318330.86967810!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4C 50英寸</p>
+                        <p class="commodity-introduce">4K HDR / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1799元</span>
+                            <s>2199元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_15350951136177_QUuVm.png" alt="">
+                        <p class="commodity-title">笔记本 i5 4G MX110</p>
+                        <p class="commodity-introduce">极速处理器</p>
+                        <p class="flashover-price">
+                            <span>1649元</span>
+                            <s>1799元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p class="kill-info">减400元</p>
+                        <img src="images/pms_1524636075.71677607!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2S 8GB+256GB</p>
+                        <p class="commodity-introduce">晓龙845 年度旗舰处理器</p>
+                        <p class="flashover-price">
+                            <span>3599元</span>
+                            <s>3999元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_14972549116226_tZpod.png" alt="">
+                        <p class="commodity-title">小米6X 4GB+32GB</p>
+                        <p class="commodity-introduce">全索尼相机，晓龙660 AIE处理器</p>
+                        <p class="flashover-price">
+                            <span>1199元</span>
+                            <s>1499元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_15281923207128_rOfDp.png" alt="">
+                        <p class="commodity-title">小米Max 2 4GB+64GB</p>
+                        <p class="commodity-introduce">6.44''大屏，5300mAh 充电宝级的大...</p>
+                        <p class="flashover-price"><span>1699元</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1504498936.11861982!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2 全陶瓷尊享版</p>
+                        <p class="commodity-introduce">全面屏2.0，Unibody 全陶</p>
+                        <p class="flashover-price">
+                            <span>2699元</span>
+                            <s>4699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <div class="small-box">
+                        <a href="#">小米盒子3s</a>
+                        <p>299元</p>
+                        <img src="images/pms_1479190789.95594557!220x220.jpg" alt="">
+                    </div>
+                    <div class="small-box">
+                        <a href="#">浏览更多</a>
+                        <a href="#">电视影音</a>
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="fr product-list" data-list="#9">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="new-product">新品</p>
+                        <img src="images/pms_1524883847.49276938!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4A 43英寸青春版</p>
+                        <p class="commodity-introduce">全高清屏 / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1399元</span>
+                            <s>1699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1522318330.86967810!220x220.jpg" alt="">
+                        <p class="commodity-title">小米电视4C 50英寸</p>
+                        <p class="commodity-introduce">4K HDR / 人工智能语音</p>
+                        <p class="flashover-price">
+                            <span>1799元</span>
+                            <s>2199元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_15350951136177_QUuVm.png" alt="">
+                        <p class="commodity-title">笔记本 i5 4G MX110</p>
+                        <p class="commodity-introduce">极速处理器</p>
+                        <p class="flashover-price">
+                            <span>1649元</span>
+                            <s>1799元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1524636075.71677607!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2S 8GB+256GB</p>
+                        <p class="commodity-introduce">晓龙845 年度旗舰处理器</p>
+                        <p class="flashover-price">
+                            <span>3599元</span>
+                            <s>3999元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_14972549116226_tZpod.png" alt="">
+                        <p class="commodity-title">小米6X 4GB+32GB</p>
+                        <p class="commodity-introduce">全索尼相机，晓龙660 AIE处理器</p>
+                        <p class="flashover-price">
+                            <span>1199元</span>
+                            <s>1499元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/xmad_15281923207128_rOfDp.png" alt="">
+                        <p class="commodity-title">小米Max 2 4GB+64GB</p>
+                        <p class="commodity-introduce">6.44''大屏，5300mAh 充电宝级的大...</p>
+                        <p class="flashover-price"><span>1699元</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p></p>
+                        <img src="images/pms_1504498936.11861982!220x220.jpg" alt="">
+                        <p class="commodity-title">小米MIX 2 全陶瓷尊享版</p>
+                        <p class="commodity-introduce">全面屏2.0，Unibody 全陶</p>
+                        <p class="flashover-price">
+                            <span>2699元</span>
+                            <s>4699元</s>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <div class="small-box">
+                        <a href="#">小米盒子3s</a>
+                        <p>299元</p>
+                        <img src="images/pms_1479190789.95594557!220x220.jpg" alt="">
+                    </div>
+                    <div class="small-box">
+                        <a href="#">浏览更多</a>
+                        <a href="#">电视影音</a>
+                        <a href="#">
+                            <i></i>
+                        </a>
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <!--智能商品列表end-->
+    <!-- 底部 -->
+    <div id="fixed-nav">
+        <ul class="fixed-list">
+            <li>
+                <img src="images/footer/98a23aae70f25798192693f21c4d4039.png">
+                <div class="fixed-erweima">
+                    <a href="#">
+                        <img src="images/footer/93650133310ec1c385487417a472a26c.png" alt="">
+                    </a>
+                </div>
+            </li>
+            <li>
+               <img src="images/footer/55cad219421bee03a801775e7309b920.png" alt="">
+               <div class="fixed-core">
+                   <a href="#">个人中心</a>
+               </div>
+            </li>
+            <li>
+                <img src="images/footer/4f036ae4d45002b2a6fb6756cedebf02.png" alt="">
+                <div class="fixed-customer">
+                    <a href="#">联系客服</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/footer/d7db56d1d850113f016c95e289e36efa.png" alt="">
+                <div class="fixed-cart">
+                    <a href="#">购物车 (0) </a>
+                </div>
+            </li>
+            <li class="fixed-toTop">
+                <img src="images/footer/totop.png" alt="">
+                <div>
+                    <a href="javascript:;">回到顶部</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer class="content">
+        <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
+    </footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
+    
 </body>
 </html>
